@@ -1,0 +1,12 @@
+type Query {
+  bikes(bike_id: String): [Bikes!]!
+}
+
+type Bikes {
+  bike_id: String!
+  lat: Float!
+  lon: Float!
+  is_reserved: Int
+  is_disabled: Int
+  vehicle_type: String!
+}
